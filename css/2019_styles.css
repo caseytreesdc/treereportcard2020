@@ -1,0 +1,167 @@
+:root {
+  /* colors */
+  --black: #000000;
+  --coffee: #2c1010;
+  --grey: #373737;
+  --silver: #e5e6e5;
+  --paper: #ffffff;
+  --blue: #3768b2;
+  --forest: #395940;
+  --moss: #7b9e81;
+  --khaki: #f2e397;
+  --yellow: #f0d13f;
+  --orange: #e18323;
+  --paarl: #a4532e;
+
+  /* fonts */
+  --cronos: cronos-pro, lato, zeitung-mono, sans-serif;
+  --lato: lato, cronos-pro, zeitung-mono, sans-serif;
+  --zeitung: zeitung, cronos-pro, lato, sans-serif;
+  --zeitungMono: zeitung-mono, cronos-pro, lato, sans-serif;
+}
+
+.text-highlight {
+  font-weight: 700;
+  background: linear-gradient(to top, var(--yellow) 50%, transparent 50%);
+}
+
+.grow-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.metric-photo {
+  border-radius: 5%;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.graph-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.graph-value,
+.graph-value__vertical {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: var(--forest);
+}
+
+.graph-value {
+  text-align: center;
+}
+
+.radial-graph {
+  height: 200px;
+  width: 200px;
+}
+
+.calculations-explained,
+.calculations-explained__vertical {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--forest);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.calculations-explained__sub,
+.calculations-explained__sub__vertical {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: normal;
+  margin: 0 auto;
+}
+
+.calculations-explained {
+  text-align: right;
+}
+
+.calculations-explained__vertical {
+  text-align: left;
+}
+
+.metric-photo__vertical {
+  border-radius: 2em;
+}
+
+.graph-value__vertical {
+  text-align: left;
+}
+
+.graph-container__vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.radial-graph__vertical {
+  height: 300px;
+  width: 300px;
+}
+
+.calculations-explained__sub {
+  text-align: right;
+}
+
+.calculations-explained__sub__vertical {
+  text-align: left;
+}
+
+.engage-heading {
+  font-family: var(--cronos);
+  font-weight: bold;
+  color: var(--forest);
+  font-size: 30px;
+}
+
+.animated-map-container {
+  display: flex;
+}
+
+.map-key {
+  height: 600px;
+}
+
+.rec-numbers {
+  color: var(--forest);
+}
+
+.tree_metric-headers {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1em;
+}
+
+/* SVG Grading Scale Styles */
+
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.year,
+.grade {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 7px;
+  font-weight: 470;
+}
+
+.year {
+  font-weight: 300;
+}
+
+.current__grade,
+.current__year {
+  fill: var(--coffee);
+}
+
+.current__grade {
+  font-weight: bold;
+}
