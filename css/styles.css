@@ -1,20 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900');
-
+@import url("https://use.typekit.net/bix5hve.css");
 
 :root {
   /* colors */
   --black: #000000;
+  /* rgba(0, 0, 0, 1); */
   --coffee: #2c1010;
+  /* rgba(44, 16, 16, 1); */
+  --americano: #4b3331;
+  /* rgba(75, 51, 49, 1); */
   --grey: #373737;
+  /* rgba(55, 55, 55, 1); */
   --silver: #e5e6e5;
+  /* rgba(229, 230, 229, 1); */
   --paper: #ffffff;
-  --blue: #3768b2;
+  /* rgba(255, 255, 255, 1); */
+  --cobalt: #3768b2;
+  /* rgba(55, 104, 178, 1); */
   --forest: #395940;
+  /* rgba(57, 89, 64, 1); */
   --moss: #7b9e81;
+  /* rgba(123, 158, 129, 1); */
   --khaki: #f2e397;
+  /* rgba(242, 227, 151, 1); */
   --yellow: #f0d13f;
+  /* rgba(240, 209, 63, 1); */
   --orange: #e18323;
+  /* rgba(225, 131, 35, 1); */
   --paarl: #a4532e;
+  /* rgba(164, 83, 46, 1); */
+
 
   /* fonts */
   --cronos: cronos-pro, lato, zeitung-mono, sans-serif;
@@ -22,6 +37,11 @@
   --zeitung: zeitung, cronos-pro, lato, sans-serif;
   --zeitungMono: zeitung-mono, cronos-pro, lato, sans-serif;
 }
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
 
 h1 {
   font-family: var(--cronos);
@@ -32,19 +52,23 @@ h1 {
   color: var(--coffee)
 }
 
-p,
 h2,
 h3,
 h5,
 h6,
 blockquote {
-  font-family: 'lato';
+  font-family: var(--cronos);
+}
+
+p {
+  color: var(--americano);
+  font-family: var(--lato);
 }
 
 .navigation li {
   padding: 0;
   margin: 17px 17px 17px 2px;
-  background-color: var(--coffee);
+  background-color: var(--americano);
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -61,7 +85,7 @@ blockquote {
 }
 
 .navigation li:hover {
-  background-color: var(--forest);
+  background-color: var(--coffee);
   -webkit-transition: background-color .2s ease-in-out;
   -moz-transition: background-color .2s ease-in-out;
   -o-transition: background-color .2s ease-in-out;
@@ -83,7 +107,7 @@ h2 {
 }
 
 h2 {
-  font-family: var(--zeitung);
+  font-family: var(--cronos);
   color: var(--coffee);
 }
 
@@ -119,7 +143,7 @@ footer a {
 p {
   font-size: 1.2em;
   font-weight: 400;
-  text-align: justify;
+
 }
 
 blockquote {
@@ -176,9 +200,8 @@ header {
 }
 
 header.clearfix.mainheader {
-  background: linear-gradient(rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)),
-    url('../img/main-header.jpg');
+  background:
+    url('https://caseytrees.org/wp-content/uploads/2021/04/gradient-map-trc-main-tree.jpg');
   height: 96vh;
   background-attachment: fixed;
   background-size: cover;
@@ -190,7 +213,7 @@ header.clearfix.mainheader {
 
 section.gradient {
   height: 4vh;
-  background-image: linear-gradient(90deg, var(--forest), var(--moss));
+  background-image: linear-gradient(90deg, rgba(75, 51, 49, 1), rgba(44, 16, 16, 1));
 }
 
 .intro-block {
@@ -232,9 +255,8 @@ section.gradient {
 }
 
 #summary-header {
-  background: linear-gradient(rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)),
-    url('../img/Summary.jpg');
+  background:
+    url('https://caseytrees.org/wp-content/uploads/2021/04/andrew-at-monument-gradient-map.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -250,9 +272,8 @@ section.gradient {
 }
 
 #spotlight-header {
-  background: linear-gradient(rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)),
-    url('../img/Spotlight.png');
+  background:
+    url('https://caseytrees.org/wp-content/uploads/2021/04/shovels-gradient-map.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -334,6 +355,18 @@ article.metrics-explained.callout p {
 
 #executive-summary .container {
   max-width: 1000px;
+}
+
+#recommendations-header {
+  background:
+    url('https://caseytrees.org/wp-content/uploads/2021/04/measuring-tree-gradient-map.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 18.5em 0;
+  background-position: center;
 }
 
 article#acknowledgements p {
@@ -456,6 +489,10 @@ footer p {
   .title {
     width: 70%;
   }
+
+  .navigation ul {
+    display: none;
+  }
 }
 
 @media only screen and (max-width:765px) and (min-width: 0px) {
@@ -480,54 +517,54 @@ footer p {
   .navigation li {
     margin: 17px 12px 17px 2px;
   }
+}
 
-  @media only screen and (max-width: 575px) and (min-width: 0px) {
-    .metric-photo {
-      margin: 1em;
-    }
-
-    #overallgrade .container {
-      padding-top: 6em;
-      padding-bottom: 6em;
-    }
-
+@media only screen and (max-width: 575px) and (min-width: 0px) {
+  .metric-photo {
+    margin: 1em;
   }
 
-
-
-  @media only screen and (max-width: 480px) and (min-width: 0px) {
-    #overallgrade .intro-block article p {
-      font-size: 1.3em;
-    }
-
-    p {
-      font-size: 1em;
-    }
-
-    blockquote {
-      font-size: 1.6em;
-    }
-
-    h1 {
-      font-size: 2em;
-    }
-
-    .intro-block {
-      padding: 3em 1em;
-    }
-
-    .intro-block p {
-      font-size: 1.2em;
-    }
-
-    .logo {
-      width: 100px;
-    }
+  #overallgrade .container {
+    padding-top: 6em;
+    padding-bottom: 6em;
   }
 
-  @media only screen and (max-width: 350px) and (min-width: 0px) {
-    h1 {
-      font-size: 1.5em;
-    }
+}
 
+
+
+@media only screen and (max-width: 480px) and (min-width: 0px) {
+  #overallgrade .intro-block article p {
+    font-size: 1.3em;
   }
+
+  p {
+    font-size: 1em;
+  }
+
+  blockquote {
+    font-size: 1.6em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .intro-block {
+    padding: 3em 1em;
+  }
+
+  .intro-block p {
+    font-size: 1.2em;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 350px) and (min-width: 0px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}

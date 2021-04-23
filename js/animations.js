@@ -61,7 +61,7 @@ document.addEventListener("scroll", function () {
   ) {
     let current = parseInt(percentage_131.innerHTML);
     setInterval(function () {
-      max = 131;
+      max = 126;
       if (parseInt(percentage_131.innerHTML) < max) {
         current++;
         percentage_131.innerHTML = current;
@@ -80,7 +80,7 @@ document.addEventListener("scroll", function () {
   ) {
     let current = parseInt(percentage_92.innerHTML);
     setInterval(function () {
-      max = 92;
+      max = 95;
       if (parseInt(percentage_92.innerHTML) < max) {
         current++;
         percentage_92.innerHTML = current;
