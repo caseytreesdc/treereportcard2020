@@ -45,11 +45,11 @@
 
 h1 {
   font-family: var(--cronos);
-  color: var(--coffee);
+  color: var(--paper);
 }
 
 .p__main-header {
-  color: var(--coffee)
+  color: var(--paper)
 }
 
 h2,
@@ -112,7 +112,7 @@ h2 {
 }
 
 h3 {
-  font-family: var(--zeitungMono);
+  font-family: var(--lato);
   font-weight: 400;
   color: var(--coffee);
   text-transform: uppercase;
@@ -125,7 +125,7 @@ h5 {
 }
 
 a {
-  color: var(--blue);
+  color: var(--forest);
   font-weight: 600;
   text-decoration: underline;
 }
@@ -399,7 +399,7 @@ section#appendix p {
 
 #prefooter {
   /* background-image: url("../img/DSCF1500.jpg"); */
-  background-image: url("https://caseytrees.org/wp-content/uploads/2016/04/DSC_0296.jpg");
+  background-image: url("https://caseytrees.org/wp-content/uploads/2021/04/ginkgo-gradient-map.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
