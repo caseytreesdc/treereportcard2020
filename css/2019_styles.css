@@ -135,7 +135,7 @@
 .tree_metric-headers {
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding-bottom: 1em;
+  padding: 1em 0;
 }
 
 /* SVG Grading Scale Styles */
