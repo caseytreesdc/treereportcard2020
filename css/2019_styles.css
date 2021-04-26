@@ -165,3 +165,7 @@
 .current__grade {
   font-weight: bold;
 }
+
+#footnote {
+  font-size: 14px;
+}
