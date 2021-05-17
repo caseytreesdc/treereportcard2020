@@ -204,7 +204,7 @@ header.clearfix.mainheader {
     url('https://caseytrees.org/wp-content/uploads/2021/04/gradient-map-trc-main-tree.jpg');
   height: 96vh;
   background-attachment: fixed;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: top center;
   margin-bottom: 0;
@@ -258,7 +258,7 @@ section.gradient {
   background:
     url('https://caseytrees.org/wp-content/uploads/2021/04/dc-skyline-gradient-maps.jpg');
   background-attachment: fixed;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   color: #fff;
   text-align: center;
@@ -275,7 +275,7 @@ section.gradient {
   background:
     url('https://caseytrees.org/wp-content/uploads/2021/04/shovels-gradient-map.jpg');
   background-attachment: fixed;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   color: #fff;
   text-align: center;
@@ -288,10 +288,6 @@ section.gradient {
 #spotlight .container {
   max-width: 1000px;
   padding-bottom: 7em;
-}
-
-#recommendations .row {
-  margin-bottom: 0;
 }
 
 #metrics-explained {
@@ -361,7 +357,7 @@ article.metrics-explained.callout p {
   background:
     url('https://caseytrees.org/wp-content/uploads/2021/04/measuring-tree-gradient-map.jpg');
   background-attachment: fixed;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   color: #fff;
   text-align: center;
@@ -401,7 +397,7 @@ section#appendix p {
   /* background-image: url("../img/DSCF1500.jpg"); */
   background-image: url("https://caseytrees.org/wp-content/uploads/2021/04/ginkgo-gradient-map.jpg");
   background-attachment: fixed;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   color: #fff;
   text-align: center;
@@ -437,41 +433,41 @@ footer p {
 
 @media only screen and (min-width: 200px) {
   header.clearfix.mainheader {
-    background-size: cover;
+    /* background-size: cover; */
   }
 
   p {
     font-size: 1em;
-    text-align: justify;
+    /* text-align: justify; */
   }
 }
 
 @media only screen and (min-width: 480px) {
   header.clearfix.mainheader {
-    background-size: cover;
+    /* background-size: cover; */
   }
 
   p {
     font-size: 1em;
-    text-align: justify;
+    /* text-align: justify; */
   }
 }
 
 @media only screen and (min-width: 575px) {
   p {
     font-size: 1.2em;
-    text-align: justify;
+    /* text-align: justify; */
   }
 }
 
 @media only screen and (min-width: 768px) {
   header.clearfix.mainheader {
-    background-size: cover;
+    /* background-size: cover; */
   }
 
   p {
     font-size: 1.2em;
-    text-align: justify;
+    /* text-align: justify; */
   }
 
 }
@@ -479,9 +475,16 @@ footer p {
 
 /*-------MAX-WIDTH MEDIA QUERIES-------*/
 
+
 @media only screen and (max-width: 1100px) and (min-width: 0px) {
   img.mx-auto.timeline {
     max-width: 90%;
+  }
+
+  .timeline-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: inline-block;
   }
 }
 
@@ -547,7 +550,7 @@ footer p {
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2.3em;
   }
 
   .intro-block {
@@ -565,6 +568,6 @@ footer p {
 
 @media only screen and (max-width: 350px) and (min-width: 0px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
